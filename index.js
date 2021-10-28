@@ -21,7 +21,7 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try{
         await client.connect();
-        // console.log('connected to database');
+        // console.log('connected to databased');
         const database = client.db('carMechanic');
         const servicesCollection = database.collection('services');
 
@@ -69,7 +69,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World car macanics!');
+  res.send('Hello World car macanicss!');
 })
 
 app.listen(port, () => {
